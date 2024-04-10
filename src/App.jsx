@@ -1,4 +1,5 @@
 import "./App.css";
+import { MovieCard } from "./components/MovieCard";
 
 function App() {
   return (
@@ -6,19 +7,19 @@ function App() {
       <main>
         <h1>Movie List</h1>
         <ul className="movie-list">
-          <li>
-            <h2>Godfather</h2>
-          </li>
-          <li>
-            <h2>Titanic</h2>
-          </li>
-          <li>
-            <h2>Taxi Driver</h2>
-          </li>
+          <MovieCard title="Godfather" />
+          <MovieCard title="Titanic" />
+          <MovieCard title="Taxi Driver" tofu="test" sdkjfh="sdfgkjh" />
         </ul>
       </main>
     </>
   );
 }
+
+// Props
+// {
+//   title: "Taxi Driver",
+//   tofu: "test"
+// }
 
 export default App;
